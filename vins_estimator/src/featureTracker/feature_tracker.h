@@ -64,6 +64,7 @@ public:
     cv::Mat mask;
     cv::Mat fisheye_mask;
     cv::Mat prev_img, cur_img;
+    shared_ptr<vector<cv::Mat>> prev_img_pyr;
     vector<cv::Point2f> n_pts;
     vector<cv::Point2f> predict_pts;
     vector<cv::Point2f> predict_pts_debug;
